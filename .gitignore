@@ -1,6 +1,1 @@
-*.idea
-.idea
-idea
-.DS_Store
-*.DS_Store
-workspace.xml
+.idea/*
