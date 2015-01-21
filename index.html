@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="oa">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="public/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/danlu.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/news.css"/>
+    <link rel="stylesheet" href="css/notice.css"/>
+    <script type="text/javascript" src="public/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="public/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="public/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="routes/routes.js"></script>
+    <script type="text/javascript" src="controllers/controllers.js"></script>
+    <script type="text/javascript" src="controllers/danluController.js"></script>
+    <script type="text/javascript" src="controllers/mainController.js"></script>
+    <script type="text/javascript" src="controllers/newsController.js"></script>
+    <script type="text/javascript" src="controllers/noticeController.js"></script>
+    <script type="text/javascript" src="service/danluService.js"></script>
+    <script type="text/javascript" src="service/mainService.js"></script>
+    <script type="text/javascript" src="service/newsService.js"></script>
+    <script type="text/javascript" src="service/noticeService.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapse" type="button" data-togglr="collapse" data-target="#navlist">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">丹露OA系统</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navlist">
+            <ul class="nav navbar-nav">
+                <li><a href="#/">主页</a></li>
+                <li><a href="#/danlu">我的丹露</a></li>
+                <li><a href="#/news">新闻</a></li>
+                <li><a href="#/notice">公告</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div ng-view></div>
+</body>
+</html>
