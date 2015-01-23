@@ -3,25 +3,43 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+
+    <!-- bootstrap相关css -->
     <link rel="stylesheet" href="public/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="public/bootstrap-material-design/dist/css/material-wfont.min.css"/>
     <link rel="stylesheet" href="public/bootstrap-material-design/dist/css/ripples.min.css"/>
+    <link rel="stylesheet" href="public/bootstrap-material-design/dist/css/material-wfont.min.css"/>
+
+    <!-- 布局 -->
     <link rel="stylesheet" href="css/danlu.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/news.css"/>
     <link rel="stylesheet" href="css/notice.css"/>
+
+
+    <!-- jquery -->
     <script type="text/javascript" src="public/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="public/bootstrap-material-design/dist/js/material.min.js"></script>
-    <script type="text/javascript" src="public/bootstrap-material-design/dist/js/ripples.min.js"></script>
+
+    <!-- bootstrap js -->
     <script type="text/javascript" src="public/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script type="text/javascript" src="public/bootstrap-material-design/dist/js/material.min.js"></script>
+
+
+
+    <!-- angularjs -->
     <script type="text/javascript" src="public/angularjs/angular.min.js"></script>
     <script type="text/javascript" src="public/angular-route/angular-route.min.js"></script>
+    <!-- routes -->
     <script type="text/javascript" src="routes/routes.js"></script>
+
+    <!-- controller -->
     <script type="text/javascript" src="controllers/controllers.js"></script>
     <script type="text/javascript" src="controllers/danluController.js"></script>
     <script type="text/javascript" src="controllers/mainController.js"></script>
     <script type="text/javascript" src="controllers/newsController.js"></script>
     <script type="text/javascript" src="controllers/noticeController.js"></script>
+
+    <!-- service -->
     <script type="text/javascript" src="service/danluService.js"></script>
     <script type="text/javascript" src="service/mainService.js"></script>
     <script type="text/javascript" src="service/newsService.js"></script>
@@ -51,4 +69,10 @@
 </nav>
 <div ng-view></div>
 </body>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $.material.init();
+    });
+</script>
 </html>
