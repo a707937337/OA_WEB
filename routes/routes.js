@@ -5,6 +5,8 @@
 var oa=angular.module('oa',['ngRoute']);
 oa.config(['$routeProvider',function($routeProvider){
     $routeProvider.when('/',{
+        templateUrl:'views/main/login.html'
+    }).when("/index",{
         templateUrl:'views/main/index.html'
     }).when('/news',{
         templateUrl:'views/news/index.html'
